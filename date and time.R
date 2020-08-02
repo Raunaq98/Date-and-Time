@@ -8,6 +8,15 @@ days<- unclass(date1)
 print(days)
 # [1] 18293     #days since 1970-01-01
 
+my_date <- as.Date("1971-14-05")
+# Error in charToDate(x) : 
+#character string is not in a standard unambiguous format
+# because standard format is yyyy-mm-dd
+# we can save date with a use defined format as well
+
+my_date<- as.Date("1971-14-05", format = "%Y-%d-%m")
+# [1] "1971-05-14"
+
 ############### Time
 
 time1<- Sys.time()
