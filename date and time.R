@@ -17,6 +17,13 @@ my_date <- as.Date("1971-14-05")
 my_date<- as.Date("1971-14-05", format = "%Y-%d-%m")
 # [1] "1971-05-14"
 
+
+
+## %Y = 4 year date format YYYY ie 1998
+## %y = 2 year date format yy ie 98
+
+
+
 ############### Time
 
 time1<- Sys.time()
